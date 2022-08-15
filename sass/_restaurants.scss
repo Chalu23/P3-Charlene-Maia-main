@@ -1,0 +1,202 @@
+// Le sass des pages de restaurants
+/*HAUT DE PAGE*/
+
+.back_link{
+    left: 0;
+    right: 300px;
+    margin-left: 32px;
+    margin-top: 10px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.img_palette {
+    object-fit: cover;
+    width: 100%;
+    max-height: 400px;
+}
+.titre_palette{
+    font-family: "shrikhand", "cursive";
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+.heart_favoris{
+    font-size: x-large;
+    padding-right: 15px;
+}
+
+.fa-heart:hover {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+    color: #ff79da;
+    cursor: pointer;
+}
+
+/*MENU*/
+.container {
+    background-color: #f6f6f6;
+    border-radius: 0px 0px 15px 15px;
+   
+    
+}
+.palette {
+    display: flex;
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards; 
+}
+#entrees, #plats, #dessert {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+}
+
+.titre_menu ,.titre_plats,.titre_desserts {
+    border-bottom: 2px solid #99e2d0;
+    width: 10%;
+    margin-left: 16px;
+}
+
+.card__menu {
+    background-color: #fff;
+    box-shadow: rgba(190, 190, 210, 0.7019607843) 0px 5px 20px 0px, #D3D3D3 1px 3px 1px 1px;
+    border-radius: 20px 20px;
+    height: fit-content;
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.card__menu-info {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    line-height: 0px;
+    padding-left: 10px;
+}
+
+.card__menu:hover .card__menu-info {
+    width: 60%;
+}
+
+.card__menu-title {
+    font-size: 14px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    font-family: "Roboto";
+}
+
+.card__menu-details {
+    line-height: 16px;
+    font-size: 15px;
+    margin-top: 1px;
+    font-weight: 300;
+    color: #303030;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.price {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+.card__check {
+    opacity: 0;
+    border-radius: 0 1px 1px 0;
+    width: 0%;
+    margin-right: -20%;
+}
+
+.card__menu:hover .card__check {
+    opacity: 1;
+    width: 20%;
+    margin-right: 0;
+    flex: 25%;
+    transform: translateX(0px);
+    background-color: #99e2d0;
+    cursor: pointer;
+    color: #f6f6f6;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+.card__menu:hover .card__check i {
+    opacity: 1;
+    margin-right: 0;
+    transform: rotate(0deg);
+    font-size: xx-large;
+    transition: transform 700ms;
+    margin-top: 20px;
+    margin-left: 20px;
+    transform: rotate(360deg);
+
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 200px;
+    align-self: center;
+    margin: 32px;
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    color: white;
+    font-size: large;
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 8px 8px 2px lightgrey;
+    transition-duration: 0.25s;
+}
+/*FOOTER*/
+.footer{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 40PX;
+    
+}
+.footer h3 {
+    display: flex;
+    color: #fff;
+    font-family: Shrikhand, "cursive";
+    font-size: px;
+    margin-bottom: 16px;
+    padding-left: 40px;
+}
+.footer ul{
+    display:flex;
+    flex-direction: column;
+}
+.footer li {
+    color: #fff;
+    font-family: "Roboto, sans-serif";
+    font-size: 19px;
+    margin: 0 0 16px;
+    list-style: none;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: #fff;
+}
