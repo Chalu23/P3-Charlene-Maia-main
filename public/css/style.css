@@ -1,16 +1,18 @@
 /*SPINNER*/
+@import "public/css/normalize.css";
 .loader {
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #9356dc;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
   height: 100vh;
   inset: 0;
   animation: disparition 200ms 6s forwards;
   transform-origin: top;
   font-size: xx-large;
+  z-index: 9999;
 }
 .loader i {
   animation: spinner 3s infinite linear;
@@ -165,7 +167,6 @@ a {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
-  width: 100%;
   gap: 30px;
 }
 
@@ -311,7 +312,6 @@ a {
   }
   .titre_menu {
     width: 40%;
-    border-bottom: 4px solid #99e2d0;
   }
   .palette {
     display: flex;
@@ -324,7 +324,7 @@ a {
     background-color: #f6f6f6;
   }
   .card__menu {
-    height: fit-content;
+    padding: 0;
   }
   #entrees, #plats, #dessert {
     width: 100%;
@@ -419,9 +419,16 @@ a {
   width: 100%;
 }
 
-.titre_menu, .titre_plats, .titre_desserts {
-  border-bottom: 2px solid #99e2d0;
-  width: 10%;
+.titre_entrees, .titre_menu, .titre_plats, .titre_desserts {
+  background: linear-gradient(to right, #99e2d0, #99e2d0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: 40px 2px;
+  background-position: 0% 100%;
+  width: 30%;
   margin-left: 16px;
 }
 
@@ -429,22 +436,26 @@ a {
   background-color: #fff;
   box-shadow: rgba(190, 190, 210, 0.7019607843) 0px 5px 20px 0px, #D3D3D3 1px 3px 1px 1px;
   border-radius: 20px 20px;
-  height: fit-content;
   margin: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 70px;
+  width: auto;
+  height: 80px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  flex: 1;
 }
 
 .card__menu-info {
   display: flex;
-  width: 80%;
+  justify-content: space-evenly;
   flex-direction: column;
-  line-height: 0px;
-  padding-left: 10px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  text-indent: 3%;
 }
 
 .card__menu:hover .card__menu-info {
@@ -455,13 +466,17 @@ a {
   font-size: 14px;
   font-weight: 600;
   text-overflow: ellipsis;
+  overflow: hidden;
   font-family: "Roboto";
+  margin: 0;
+  padding: 0;
 }
 
 .card__menu-details {
   line-height: 16px;
   font-size: 15px;
-  margin-top: 1px;
+  margin: 0;
+  padding: 0;
   font-weight: 300;
   color: #303030;
   text-overflow: ellipsis;
@@ -473,8 +488,9 @@ a {
   display: flex;
   width: 20%;
   justify-content: center;
-  margin-top: 30px;
-  margin-right: 60px;
+  margin-top: 10px;
+  margin-right: 80px;
+  align-items: center;
 }
 
 .card__check {
@@ -495,6 +511,9 @@ a {
   color: #f6f6f6;
   border-top-right-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card__menu:hover .card__check i {
@@ -503,9 +522,13 @@ a {
   transform: rotate(0deg);
   font-size: xx-large;
   transition: transform 700ms;
-  margin-top: 20px;
-  margin-left: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   transform: rotate(360deg);
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
