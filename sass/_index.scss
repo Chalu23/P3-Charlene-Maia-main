@@ -1,23 +1,23 @@
 // Le sass relatif à la page d'accueil
 
 /*SPINNER*/
-.loader{
-    position:fixed;
-    display:flex;
+.loader {
+    position: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
-    color:#9356dc;
-    background-color:rgba(255,255,255,0.8);
+    color: #9356dc;
+    background-color: rgba(255, 255, 255, 0.8);
     height: 100vh;
-    inset:0;
-    animation: disparition 200ms 6s forwards;
+    inset: 0;
+    animation: disparition 200ms 1s forwards;
     transform-origin: top;
     font-size: xx-large;
     z-index: 9999;
 
-    i{
-        animation:spinner 3s infinite linear;
-       
+    i {
+        animation: spinner 3s infinite linear;
+
     }
 }
 
@@ -26,15 +26,20 @@ body {
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     margin: 0 0;
-    
 }
 
 /*PREMIER PAGE */
 
 
-header,
-.header__logo {
-    padding-left: 620px;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+h2 {
+    font-size: 28px;
 }
 
 /*GEOLOCALISATION*/
@@ -43,6 +48,11 @@ header,
     justify-content: center;
     box-shadow: 0px 5px 5px #eaeaea;
     background-color: #f3f3f3;
+}
+
+.restau_exception {
+    font-size: 22px;
+    color: grey;
 }
 
 #nav {
@@ -55,8 +65,11 @@ header,
     padding-top: 25px;
     padding-right: 10px;
 }
+
 .button__restau {
-    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 12px 24px;
     font-weight: 500;
     font-size: 17px;
@@ -68,10 +81,12 @@ header,
     cursor: pointer;
     margin: 20px auto;
     transition-duration: 0.25s;
-  }
-  .button_restau:hover{
+}
+
+.button_restau:hover {
     box-shadow: 8px 8px 2px lightgrey;
-  }
+}
+
 /*FIN DU BOUTON POUR EXPLORER LES RESTAURANTS*/
 
 /*BLOC FONCTIONNEMENT*/
@@ -101,6 +116,14 @@ header,
 }
 
 .ordre__card:hover {
+    background-color: #fae5fe;
+
+    .ordre__card-icon {
+        color: rgb(255, 19, 255);
+    }
+}
+
+.ordre__card:hover {
     box-shadow: 1px 11px 14px 0px #6d6d6d;
 }
 
@@ -122,10 +145,6 @@ header,
 }
 
 
-.ordre__card .ordre__card-number.fa-solid,
-.fas {
-    padding-right: 20px;
-}
 .ordre__card .ordre__card-number {
     background: #9356dc;
     color: white;
@@ -137,11 +156,17 @@ header,
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
 #fonctionnement {
     height: 200px;
     padding-top: 30px;
     background-color: #f2f2f2;
+    padding-left: 20px;
+}
+
+.titre_restau {
+    padding-left: 20px;
 }
 
 
@@ -183,10 +208,7 @@ a {
 .cards_francaise,
 .cards_delice,
 .cards_lanote {
-
-    margin-top: 29px;
     line-height: 6px;
-    max-height: 207px;
     width: 25%;
     min-width: 37px;
     border-radius: 32px;
@@ -219,7 +241,7 @@ a {
     animation-name: appear;
     animation-duration: 1000ms;
     animation-fill-mode: backwards;
-  }
+}
 
 .heart {
     display: flex;
@@ -229,7 +251,7 @@ a {
 .img_restau {
     object-fit: cover;
     width: 100%;
-    height: 120px;
+    height: 150px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -239,7 +261,7 @@ a {
 .footer {
     display: flex;
     margin-top: 40PX;
-     background-color: #353535;
+    background-color: #353535;
 }
 
 .footer ul {
@@ -248,9 +270,7 @@ a {
 }
 
 .footer h3 {
-    display: flex;
     color: #fff;
-    margin-left: 42px;
     font-family: Shrikhand, "cursive";
     font-weight: normal;
     font-size: 20px;

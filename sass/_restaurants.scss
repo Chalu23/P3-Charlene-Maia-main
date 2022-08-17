@@ -99,8 +99,9 @@
     margin: 0;
     padding: 0;
     white-space: nowrap;
-    text-indent: 3%;
+    padding-left: 10px;
     height: 80px;
+    width: 80%;
 
 }
 
@@ -132,48 +133,41 @@
     display: flex;
     width: 20%;
     justify-content: center;
-    margin-top: 10px;
-    margin-right: 80px;
     align-items: flex-end;
-    margin-bottom: 16px;
 }
 .card__check {
     opacity: 0;
     border-radius: 0 1px 1px 0;
     width: 0%;
-    margin-right: -20%;
+    margin-right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: #f6f6f6;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+
+    i {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .card__menu:hover .card__check {
     opacity: 1;
     width: 20%;
-    margin-right: 0;
-    flex: 25%;
-    transform: translateX(0px);
     background-color: #99e2d0;
-    cursor: pointer;
-    color: #f6f6f6;
-    border-top-right-radius: 20px 20px;
-    border-bottom-right-radius: 20px 20px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    transition: width 300ms;
 
 }
 .card__menu:hover .card__check i {
     opacity: 1;
     margin-right: 0;
-    transform: rotate(0deg);
     font-size: xx-large;
-    transition: transform 700ms;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    transition: transform 900ms;
     transform: rotate(360deg);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
 }
 .button {
     display: flex;

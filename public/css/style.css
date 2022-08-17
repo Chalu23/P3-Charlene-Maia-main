@@ -9,7 +9,7 @@
   background-color: rgba(255, 255, 255, 0.8);
   height: 100vh;
   inset: 0;
-  animation: disparition 200ms 6s forwards;
+  animation: disparition 200ms 1s forwards;
   transform-origin: top;
   font-size: xx-large;
   z-index: 9999;
@@ -26,9 +26,15 @@ body {
 }
 
 /*PREMIER PAGE */
-header,
-.header__logo {
-  padding-left: 620px;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 /*GEOLOCALISATION*/
@@ -37,6 +43,11 @@ header,
   justify-content: center;
   box-shadow: 0px 5px 5px #eaeaea;
   background-color: #f3f3f3;
+}
+
+.restau_exception {
+  font-size: 22px;
+  color: grey;
 }
 
 #nav {
@@ -51,7 +62,9 @@ header,
 }
 
 .button__restau {
-  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 24px;
   font-weight: 500;
   font-size: 17px;
@@ -96,6 +109,13 @@ header,
 }
 
 .ordre__card:hover {
+  background-color: #fae5fe;
+}
+.ordre__card:hover .ordre__card-icon {
+  color: rgb(255, 19, 255);
+}
+
+.ordre__card:hover {
   box-shadow: 1px 11px 14px 0px #6d6d6d;
 }
 
@@ -115,11 +135,6 @@ header,
   font-size: x-large;
 }
 
-.ordre__card .ordre__card-number.fa-solid,
-.fas {
-  padding-right: 20px;
-}
-
 .ordre__card .ordre__card-number {
   background: #9356dc;
   color: white;
@@ -137,6 +152,11 @@ header,
   height: 200px;
   padding-top: 30px;
   background-color: #f2f2f2;
+  padding-left: 20px;
+}
+
+.titre_restau {
+  padding-left: 20px;
 }
 
 /*FIN BLOC FONCTIONNEMENT*/
@@ -174,9 +194,7 @@ a {
 .cards_francaise,
 .cards_delice,
 .cards_lanote {
-  margin-top: 29px;
   line-height: 6px;
-  max-height: 207px;
   width: 25%;
   min-width: 37px;
   border-radius: 32px;
@@ -219,7 +237,7 @@ a {
 .img_restau {
   object-fit: cover;
   width: 100%;
-  height: 120px;
+  height: 150px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -237,9 +255,7 @@ a {
 }
 
 .footer h3 {
-  display: flex;
   color: #fff;
-  margin-left: 42px;
   font-family: Shrikhand, "cursive";
   font-weight: normal;
   font-size: 20px;
@@ -252,9 +268,6 @@ a {
 
 /*FIN FOOTER*/
 @media screen and (max-width: 768px) {
-  header, .header__logo {
-    padding-left: 130px;
-  }
   .titre_dessert .titre_plats {
     padding-left: 0px;
   }
@@ -263,7 +276,6 @@ a {
     background-color: #fafafa;
   }
   .button__restau {
-    width: 50%;
     font-size: 18px;
     height: 28px;
   }
@@ -271,15 +283,11 @@ a {
     display: flex;
     flex-direction: column;
     height: 400px;
-    padding-left: 20px;
   }
   .cards {
     flex-direction: column;
     width: 400%;
     gap: 24px;
-  }
-  .titre_restau {
-    padding-left: 20px;
   }
   .restaurant {
     display: flex;
@@ -459,8 +467,9 @@ a {
   margin: 0;
   padding: 0;
   white-space: nowrap;
-  text-indent: 3%;
+  padding-left: 10px;
   height: 80px;
+  width: 80%;
 }
 
 .card__menu:hover .card__menu-info {
@@ -491,48 +500,41 @@ a {
   display: flex;
   width: 20%;
   justify-content: center;
-  margin-top: 10px;
-  margin-right: 80px;
   align-items: flex-end;
-  margin-bottom: 16px;
 }
 
 .card__check {
   opacity: 0;
   border-radius: 0 1px 1px 0;
   width: 0%;
-  margin-right: -20%;
+  margin-right: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  color: #f6f6f6;
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+}
+.card__check i {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card__menu:hover .card__check {
   opacity: 1;
   width: 20%;
-  margin-right: 0;
-  flex: 25%;
-  transform: translateX(0px);
   background-color: #99e2d0;
-  cursor: pointer;
-  color: #f6f6f6;
-  border-top-right-radius: 20px 20px;
-  border-bottom-right-radius: 20px 20px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  transition: width 300ms;
 }
 
 .card__menu:hover .card__check i {
   opacity: 1;
   margin-right: 0;
-  transform: rotate(0deg);
   font-size: xx-large;
-  transition: transform 700ms;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  transition: transform 900ms;
   transform: rotate(360deg);
-  align-items: center;
-  display: flex;
-  justify-content: center;
 }
 
 .button {
