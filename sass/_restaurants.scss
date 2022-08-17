@@ -38,6 +38,9 @@
     color: #ff79da;
     cursor: pointer;
 }
+.fa-heart{
+    font-size: x-large;
+}
 
 /*MENU*/
 .container {
@@ -56,6 +59,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-right: 16px;
+    gap:40px;
+    height: 100%;
    
 }
 
@@ -76,12 +82,9 @@
     background-color: #fff;
     box-shadow: rgba(190, 190, 210, 0.7019607843) 0px 5px 20px 0px, #D3D3D3 1px 3px 1px 1px;
     border-radius: 20px 20px;
-    margin: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:auto;
-    height: 80px;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     flex:1;
@@ -97,6 +100,7 @@
     padding: 0;
     white-space: nowrap;
     text-indent: 3%;
+    height: 80px;
 
 }
 
@@ -107,8 +111,6 @@
 .card__menu-title {
     font-size: 14px;
     font-weight: 600;
-    text-overflow: ellipsis;
-    overflow: hidden;
     font-family: "Roboto";
     margin: 0;
     padding: 0;
@@ -132,7 +134,8 @@
     justify-content: center;
     margin-top: 10px;
     margin-right: 80px;
-    align-items: center;
+    align-items: flex-end;
+    margin-bottom: 16px;
 }
 .card__check {
     opacity: 0;
