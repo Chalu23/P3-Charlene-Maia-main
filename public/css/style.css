@@ -43,12 +43,13 @@ h2 {
   display: flex;
   justify-content: center;
   box-shadow: 0px 5px 5px #eaeaea;
-  background-color: #f3f3f3;
+  background-color: #eaeaea;
 }
 
 .restau_exception {
-  font-size: 22px;
-  color: grey;
+  font-size: 20px;
+  color: black;
+  font-weight: 200;
 }
 
 #nav {
@@ -58,7 +59,7 @@ h2 {
 }
 
 .icon_loc {
-  padding-top: 25px;
+  padding-top: 30px;
   padding-right: 10px;
 }
 
@@ -79,8 +80,8 @@ h2 {
   transition-duration: 0.25s;
 }
 
-.button_restau:hover {
-  box-shadow: 8px 8px 2px lightgrey;
+.button__restau:hover {
+  box-shadow: 10px 10px 8px lightgrey;
 }
 
 /*FIN DU BOUTON POUR EXPLORER LES RESTAURANTS*/
@@ -267,11 +268,13 @@ a {
 
 /*FIN FOOTER*/
 @media screen and (max-width: 768px) {
+  .body {
+    min-height: 100vh;
+  }
   .titre_dessert .titre_plats {
     padding-left: 0px;
   }
   #nav {
-    margin-bottom: 40px;
     background-color: #fafafa;
   }
   .button__restau {
@@ -283,8 +286,13 @@ a {
     flex-direction: column;
     height: 400px;
   }
+  .premier__titre {
+    font-size: 2, 6rem;
+  }
   #restaurant {
     background-color: #f2f2f2;
+    padding: 10px 0px 10px 0px;
+    margin-top: 40px;
   }
   .cards {
     flex-direction: column;

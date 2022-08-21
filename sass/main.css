@@ -465,13 +465,13 @@ a {
   opacity: 1;
   width: 20%;
   margin-right: 0;
-  transition: margin-right 0, 5s;
+  transition: margin-right ,5s;
 }
 
 .card__menu:hover .card__check i {
   opacity: 1;
   margin-right: 0;
-  transition: margin-right 0, 5s;
+  transition: margin-right ,5s;
   transform: rotate(150deg);
 }
 
@@ -505,7 +505,6 @@ a {
   display: flex;
   color: #fff;
   font-family: Shrikhand, "cursive";
-  font-size: px;
   margin-bottom: 16px;
   padding-left: 40px;
 }

@@ -1,12 +1,13 @@
 @media screen and (max-width: 768px) {
     
-    
+    .body{
+        min-height: 100vh;
+    }
     .titre_dessert .titre_plats{
         padding-left:0px;
     }
     
     #nav{
-        margin-bottom: 40px;
         background-color: #fafafa;
     }
     
@@ -22,8 +23,13 @@
         flex-direction: column;
         height: 400px;
     }
+    .premier__titre{
+        font-size:2,6rem;
+    }
     #restaurant{
         background-color: #f2f2f2;
+        padding: 10px 0px 10px 0px;
+        margin-top: 40px;
     }
     
     .cards{
