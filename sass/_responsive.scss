@@ -22,7 +22,9 @@
         flex-direction: column;
         height: 400px;
     }
-    
+    #restaurant{
+        background-color: #f2f2f2;
+    }
     
     .cards{
         flex-direction:column;
@@ -62,8 +64,11 @@
     .footer {
         line-height: 1;
     }
-    
-    
+
+    .fa-utensils{
+    padding-left: 6px;
+    }
+   
     .img_palette {
         height: 250px;
         width: 100%;

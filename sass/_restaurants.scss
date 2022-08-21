@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: space-between;
     padding-left: 15px;
+    padding-right: 15px;
 }
 .heart_favoris {
     font-size: x-large;
@@ -46,6 +47,8 @@
 .container {
     background-color: #f6f6f6;
     border-radius: 0px 0px 15px 15px;
+    padding-left: 10px;
+    padding-right: 10px;
    
     
 }
@@ -60,7 +63,7 @@
     flex-direction: column;
     width: 100%;
     margin-right: 16px;
-    gap:40px;
+    gap:20px;
     height: 100%;
    
 }
@@ -76,6 +79,7 @@
     background-position: 0% 100%;
     width: 30%;
     margin-left: 16px;
+    margin-bottom: 0px;
 }
 
 .card__menu {
@@ -195,7 +199,6 @@
     
     display: flex;
     flex-direction: column;
-    margin-top: 40PX;
     
 }
 .footer h3 {
@@ -221,4 +224,6 @@
 .footer li a {
     text-decoration: none;
     color: #fff;
+    gap:10px;
+    display: flex;
 }
