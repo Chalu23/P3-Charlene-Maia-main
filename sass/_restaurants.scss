@@ -75,11 +75,12 @@
     background-repeat: repeat;
     background-size: auto;
     background-repeat: no-repeat;
-    background-size: 40px 2px;
+    background-size: 40px 4px;
     background-position: 0% 100%;
     width: 30%;
     margin-left: 16px;
     margin-bottom: 0px;
+    font-weight: 400;
 }
 
 .card__menu {
@@ -205,7 +206,6 @@
     display: flex;
     color: #fff;
     font-family: Shrikhand, "cursive";
-    font-size: px;
     margin-bottom: 16px;
     padding-left: 40px;
 }
