@@ -42,7 +42,7 @@ h2 {
 .localisation {
   display: flex;
   justify-content: center;
-  box-shadow: 10px 0px 10px #17202a;
+  box-shadow: 5px 0px 5px #566573;
   background-color: #f2f2f2;
 }
 
