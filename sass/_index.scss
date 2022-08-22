@@ -14,10 +14,10 @@
     transform-origin: top;
     font-size: xx-large;
     z-index: 9999;
-
+    
     i {
         animation: spinner 3s infinite linear;
-
+        
     }
 }
 
@@ -49,7 +49,7 @@ h2 {
     justify-content: center;
     box-shadow:5px 0px 5px #566573;
     background-color: #f2f2f2;
-
+    
 }
 
 .restau_exception {
@@ -101,7 +101,7 @@ h2 {
     display: flex;
     gap: 10px;
     justify-content: space-evenly;
-
+    
 }
 
 .ordre__card {
@@ -120,7 +120,7 @@ h2 {
 
 .ordre__card:hover {
     background-color: #fae5fe;
-
+    
     .ordre__card-icon {
         color: #9356dc;
     }
@@ -140,7 +140,7 @@ h2 {
     text-transform: none;
     display: inline-block;
     padding-right: 10px;
-
+    
 }
 
 .heart {
@@ -185,14 +185,14 @@ a {
     flex-wrap: wrap;
     padding-top: 30px;
     background-color: #f2f2f2;
-
+    
 }
 
 .card__badge {
     background-color: #99e2d0;
     color: #1b6150;
     padding: 8px;
-
+    
     position: absolute;
     top: 16px;
     right: 12px;
