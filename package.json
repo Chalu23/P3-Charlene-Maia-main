@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Chalu23/P3-Charlene-Maia/issues"
   },
-  "homepage": "https://github.com/Chalu23/P3-Charlene-Maia#readme"
+  "homepage": "https://github.com/Chalu23/P3-Charlene-Maia#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
