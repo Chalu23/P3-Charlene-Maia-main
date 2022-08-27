@@ -1,5 +1,4 @@
 /*SPINNER*/
-@import "public/css/normalize.css";
 @import "node_modules/normalize.css/normalize.css";
 .loader {
   position: fixed;
