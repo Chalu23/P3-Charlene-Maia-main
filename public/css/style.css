@@ -1,5 +1,6 @@
 /*SPINNER*/
 @import "public/css/normalize.css";
+@import "/Users/lucvaleyre/Downloads/P3-Charlene-Maia-main/node_modules/normalize.css/normalize.css";
 .loader {
   position: fixed;
   display: flex;
@@ -293,7 +294,7 @@ a {
 }
 
 .premier__titre {
-  font-size: 41px;
+  font-size: 2, 6rem;
 }
 
 #restaurant {
