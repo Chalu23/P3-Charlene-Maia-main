@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Chalu23/P3-Charlene-Maia#readme",
   "dependencies": {
+    "normalize": "^0.3.1",
     "normalize.css": "^8.0.1"
   }
 }
